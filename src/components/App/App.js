@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-
-import styles from "./App.css";
+import './App.css'
+import Search from '../HomePage/Search/Search.js'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <h1 className={styles.header}>My React App!</h1>
+            <div className = "tail-top"> 
+                <div className = "tail-bottom">
+                    <Search/>
+                </div>
             </div>
         );
     }

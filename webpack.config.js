@@ -17,11 +17,27 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", {loader: "css-loader", options: {modules: true}}]
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      }, {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        include: /images/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/'
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })

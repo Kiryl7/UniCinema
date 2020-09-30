@@ -1,0 +1,8 @@
+.button-component {
+    width: 15%;
+}
+
+.button-component button{
+    width: 100%;
+    height: 35px;
+}

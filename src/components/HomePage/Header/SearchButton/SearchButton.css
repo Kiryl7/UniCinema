@@ -1,8 +1,8 @@
-.button-component {
+.buttonComponent {
     width: 15%;
 }
 
-.button-component button{
+.buttonComponent button{
     width: 100%;
     height: 35px;
 }

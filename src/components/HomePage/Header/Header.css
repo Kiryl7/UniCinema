@@ -1,5 +1,5 @@
 
-.tail-top {
+.tailTop {
 
     height: 300px;
     
@@ -10,14 +10,14 @@
     background-color:gray;
 }
 
-.header-p {
+.header {
     align-self: baseline;
     margin-left: 10%;
     margin-bottom: 3%;
     font: 200% serif;
 }
 
-.search-button {
+.search {
 
     display: flex;
     height: 40px;

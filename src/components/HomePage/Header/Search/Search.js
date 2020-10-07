@@ -1,10 +1,10 @@
 import React from "react"
-import './Search.css'
+import styles from './Search.css'
 
 function Search() {
     return (
-        <div className = "input-search">
-          <input className = 'size'></input>
+        <div className={styles.inputSearch}>
+          <input className={styles.size}></input>
         </div>
     )
 }

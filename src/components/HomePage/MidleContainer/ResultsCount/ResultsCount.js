@@ -1,9 +1,9 @@
 import React from 'react'
-import './ResultsCount.css'
+import styles from './ResultsCount.css'
 
 function ResultsCount() {
     return (
-        <div className = 'ResultsCount'>
+        <div className={styles.resultsCount}>
             <p>X movie found</p>
         </div>
     )

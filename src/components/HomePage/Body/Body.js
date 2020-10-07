@@ -1,0 +1,14 @@
+import React from 'react'
+import MovieList from './MovieList/MovieList'
+
+import styles from './Body.css'
+
+function Body () {
+    return (
+        <div>
+            <MovieList/>
+        </div>
+    )
+}
+
+export default Body

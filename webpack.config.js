@@ -18,6 +18,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
+          'classnames',
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",

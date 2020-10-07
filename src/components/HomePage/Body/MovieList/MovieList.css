@@ -1,0 +1,17 @@
+.movieList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+
+.indent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.indent1 {
+    padding: 1%;
+}

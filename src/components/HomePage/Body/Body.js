@@ -5,7 +5,7 @@ import styles from './Body.css'
 
 function Body () {
     return (
-        <div>
+        <div className={styles.body}>
             <MovieList/>
         </div>
     )

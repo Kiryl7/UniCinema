@@ -3,8 +3,39 @@ import styles from './MovieList.css'
 
 function MovieList() {
     return (
-        <div>
-
+        <div className={styles.indent1}>
+            <ul className={styles.movieList}>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                </li>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                </li>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                </li>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                </li>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                    </li>
+                <li className={styles.indent}>
+                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
+                    <b>Top Gun</b>
+                    <p>Action</p>
+                </li>
+            </ul>
         </div>
     )
 }

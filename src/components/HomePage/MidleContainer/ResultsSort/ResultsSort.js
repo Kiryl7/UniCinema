@@ -1,24 +1,24 @@
 import React from 'react'
-// import Styles from './ResultsSort.css'
-import './ResultsSort.css'
+import styles from './ResultsSort.css'
+import classNames from 'classnames'
 
 function ResultsSort() {
     return (
-        <div className = 'ResultsSort'>
-        <div><p>SORT BY     </p></div>
+        <div className={styles.resultsSort}>
+            <div><p>SORT BY     </p></div>
             <div> 
-            <div class="form_toggle">           
-                <div className="form_toggle-item item-1">
-                    <input id="fid-1" type="radio" name="radio" value="off" checked/>
-                    <label for="fid-1">TITLE</label>
+                <div className={styles.form_toggle}>           
+                <div className={classNames(styles.form_toggle_item, styles.item_1)}>
+                    <input id="fid_3" type="radio" name="radio1" value="off" checked/>
+                    <label for="fid_3">TITLE</label>
                 </div>
-                <div className="form_toggle-item item-2">
-                    <input id="fid-2" type="radio" name="radio" value="on"/>
-                    <label for="fid-2">GENRE</label>
+                <div className={classNames(styles.form_toggle_item, styles.item_2)}>
+                    <input id="fid_4" type="radio" name="radio1" value="on"/>
+                    <label for="fid_4">GENRE</label>
                 </div>
                 </div>
             </div>           
-    </div>
+        </div>
     )
 }
 

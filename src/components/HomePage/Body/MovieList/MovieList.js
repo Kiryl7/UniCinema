@@ -7,32 +7,50 @@ function MovieList() {
             <ul className={styles.movieList}>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>                 
                     <p>Action</p>
                 </li>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>
                     <p>Action</p>
                 </li>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>
                     <p>Action</p>
                 </li>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>
                     <p>Action</p>
                 </li>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>
                     <p>Action</p>
                     </li>
                 <li className={styles.indent}>
                     <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <b>Top Gun</b>
+                    <div className={styles.description}>
+                        <b className={styles.rightB}>Top Gun</b>
+                        <p>1994</p>
+                    </div>
                     <p>Action</p>
                 </li>
             </ul>

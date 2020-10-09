@@ -7,11 +7,18 @@
 .indent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 1%;
 }
 
 .indent1 {
     padding: 1%;
+}
+
+.description { 
+    display: flex;
+}
+
+.rightB{
+    margin-right: 200px;
 }

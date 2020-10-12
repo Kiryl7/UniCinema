@@ -1,0 +1,25 @@
+.tailTop {
+    height: 500px;  
+    background-color:gray;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contentHeader {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.descriptionContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+
+.header {
+    font: 200% serif;
+}

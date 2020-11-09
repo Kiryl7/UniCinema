@@ -3,10 +3,10 @@ import MovieList from './MovieList/MovieList'
 
 import styles from './Body.css'
 
-function Body () {
+function Body (props) {
     return (
         <div className={styles.body}>
-            <MovieList/>
+            <MovieList onClick={props.onClick}/>
         </div>
     )
 }

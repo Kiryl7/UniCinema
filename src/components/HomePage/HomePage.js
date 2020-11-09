@@ -5,10 +5,10 @@ import Body from './Body/Body'
 
 import './HomePage.css'
 
-function HomePage() {
+function HomePage(props) {
     return (
         <div>
-             <Header/> <MidleContainer/> <Body/>
+             <Header/> <MidleContainer/> <Body onClick={props.onClick}/>
         </div>
     )
 }

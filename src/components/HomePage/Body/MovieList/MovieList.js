@@ -23,7 +23,7 @@ const array = [
     {
         img: '../../../../../images/topgun.jpg',
         age: 2020,
-        title: 'Top Huiynya',
+        title: 'Top top',
         name: 'Darya'
     },
     {
@@ -41,7 +41,7 @@ const array = [
 
 ]
 
-function MovieList() {
+function MovieList(props) {
     return (
         <div className={styles.indent1}>
             <ul className={styles.movieList}>
@@ -49,7 +49,7 @@ function MovieList() {
                     array.map((obj) => {
                         return (
                             <li className={styles.indent}>
-                                <img src={obj.img} className={styles.imgStyle}/>
+                                <img src={obj.img} className={styles.imgStyle} onClick={props.onClick}/>
                                 <div className={styles.description}>
                                     <b className={styles.rightB}>{obj.title}</b>
                                     <p>{obj.age}</p>

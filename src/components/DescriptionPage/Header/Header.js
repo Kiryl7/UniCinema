@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './Header.css'
 
-function Header() {
+function Header(props) {
     return (
         <div className={styles.tailTop}>
-           <div className={styles.search}>
-            <img src='../images/icons8.png' height='50' width='50' alt='Search'></img>                
-           </div>
-           <div className={styles.contentHeader}>
+            <div className={styles.search}>
+            <img src='../images/icons8.png' height='50' width='50' alt='Search' onClick={props.onClick}></img>                
+            </div>
+            <div className={styles.contentHeader}>
             <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"></img>
                 <div className={styles.descriptionContent}>
                     <div>

@@ -4,10 +4,10 @@ import Header from './Header/Header'
 import MidleContainer from './MidleContainer/MidleContainer'
 import Body from './Body/Body'
 
-function DescriptionPage() {
+function DescriptionPage(props) {
     return (
         <div>
-            <Header/> <MidleContainer/> <Body/>
+            <Header onClick={props.onClick}/> <MidleContainer/> <Body/>
         </div>
     )
 }

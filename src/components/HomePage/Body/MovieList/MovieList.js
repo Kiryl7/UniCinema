@@ -1,58 +1,64 @@
 import React from 'react'
 import styles from './MovieList.css'
 
+const array = [
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 1994,
+        title: 'Top Gun',
+        name: 'Darya'
+    },
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 2004,
+        title: 'Top Otec',
+        name: 'Darya'
+    },
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 2001,
+        title: 'Top Dasha',
+        name: 'Darya'
+    },
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 2020,
+        title: 'Top Huiynya',
+        name: 'Darya'
+    },
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 1111,
+        title: 'TITTTTTLE',
+        name: 'Darya'
+    },
+    {
+        img: '../../../../../images/topgun.jpg',
+        age: 1994,
+        title: 'Top Gun',
+        name: 'Darya'
+    },
+
+]
+
 function MovieList() {
     return (
         <div className={styles.indent1}>
             <ul className={styles.movieList}>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>                 
-                    <p>Action</p>
-                </li>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>
-                    <p>Action</p>
-                </li>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>
-                    <p>Action</p>
-                </li>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>
-                    <p>Action</p>
-                </li>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>
-                    <p>Action</p>
-                    </li>
-                <li className={styles.indent}>
-                    <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"/>
-                    <div className={styles.description}>
-                        <b className={styles.rightB}>Top Gun</b>
-                        <p>1994</p>
-                    </div>
-                    <p>Action</p>
-                </li>
+                {
+                    array.map((obj) => {
+                        return (
+                            <li className={styles.indent}>
+                                <img src={obj.img} className={styles.imgStyle}/>
+                                <div className={styles.description}>
+                                    <b className={styles.rightB}>{obj.title}</b>
+                                    <p>{obj.age}</p>
+                                </div>                 
+                                <p>Action</p>
+                            </li>
+                        )
+                    })
+                }
             </ul>
         </div>
     )

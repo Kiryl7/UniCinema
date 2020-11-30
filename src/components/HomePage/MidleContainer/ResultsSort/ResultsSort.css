@@ -1,4 +1,4 @@
-.resultsSort {
+/* .resultsSort {
     display: flex;
     margin-right: 3%;
     align-items: center;
@@ -33,10 +33,9 @@
 	border-right: 1px solid rgb(0, 0, 0);
 }
  
-/* Checked */
 .form_toggle .item_1 input[type=radio]:checked + label {
 	background: yellowgreen;
 }
 .form_toggle .item_2 input[type=radio]:checked + label {
 	background: yellowgreen;
-}
+} */

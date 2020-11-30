@@ -7,7 +7,9 @@ import Body from './Body/Body'
 function DescriptionPage(props) {
     return (
         <div>
-            <Header onClick={props.onClick}/> <MidleContainer/> <Body/>
+            <Header onClick={props.onClick} obj={props.obj}/>
+            <MidleContainer/>
+            <Body onClick={props.onClick}/>
         </div>
     )
 }

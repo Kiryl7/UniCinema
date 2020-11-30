@@ -5,6 +5,11 @@
     margin-left: 10%;
     align-items: center;
 }
+.resultsSort {
+    display: flex;
+    margin-right: 3%;
+    align-items: center;
+}
 
 .form_toggle {
 	display: inline-block;

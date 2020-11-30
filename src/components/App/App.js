@@ -6,15 +6,18 @@ import DescriptionPage from '../DescriptionPage/DescriptionPage'
 
 function App() {
 
-    const  [action, setAction] = useState(true)
+    const [action, setAction] = useState(true)
+    const [film, setFilm] = useState(null)
 
-    const touggleAction = () => {
-        setAction(!action)
+    const touggleAction = (obj) => {
+        //setAction(!action) 
+        setFilm(obj)
+
+        
     }
-
         return (
             <div>   
-            {action ? <HomePage onClick={touggleAction}/> : <DescriptionPage onClick={touggleAction}/>}
+                {film ? <DescriptionPage onClick={touggleAction} obj={film}/> : <HomePage onClick={touggleAction}/>} 
             </div>
         );
     }

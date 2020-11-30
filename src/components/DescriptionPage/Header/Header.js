@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Header.css'
 
 function Header(props) {
+
+    useEffect(() => {
+        console.log('film - ', props.obj)
+    }, [])
+
+
     return (
         <div className={styles.tailTop}>
             <div className={styles.search}>
@@ -11,11 +17,11 @@ function Header(props) {
             <img src="../../../../../images/topgun.jpg" width="300" height="400" alt="Top Gun"></img>
                 <div className={styles.descriptionContent}>
                     <div>
-                        <p className={styles.header}>FIND YOUR MOVIE</p>
+                        <p className={styles.header}>{props.obj.name}</p>
                     </div>
-                    <p>Oscar winning movie</p>
+                    <p>{props.obj.title}</p>
                     <div className={styles.contentHeader}>
-                        <p>1986   </p>
+                        <p className={styles.marginTitle}>{props.obj.age}</p>
                         <p>110min</p>
                     </div>
                     <p>

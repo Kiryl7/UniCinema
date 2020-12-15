@@ -4,3 +4,9 @@
     justify-content: space-between;
     background-color: tomato;
 }
+
+.drama {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}

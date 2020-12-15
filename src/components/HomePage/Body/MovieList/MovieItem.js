@@ -11,7 +11,7 @@ function MovieItem(props) {
                     <b className={styles.rightB}>{props.data.title}</b>
                     <p>{props.data.age}</p>
                 </div>
-                <p>Action</p>
+                <p>{props.data.ganre}</p>
             </li>
     )
 }

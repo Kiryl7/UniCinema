@@ -1,7 +1,3 @@
-import React from 'react'
-import styles from './MovieList.css'
-import MovieItem from './MovieItem'
-import TestList from './MovieList.test'
 
 const array = [
     {
@@ -55,30 +51,15 @@ const array = [
 
 ]
 
+const obj = array[0]
 
-function MovieList(props) {
-
-    const openFilm = (id) => {
-        const findObj = array.find(obj => {
-            return obj.id === id
-        })
-
-        props.onClick(findObj)
-    }
-
-    return (
-        <div className={styles.indent1}>
-            <ul className={styles.movieList}>
-                {
-                    array.map((obj) => {
-                        return (
-                            <MovieItem key={obj.id} onClick={props.onClick} data={obj} onOpen={openFilm} />
-                        )
-                    })
-                }
-            </ul>
-        </div>
-    )
-}
-
-export default MovieList
+test('the array have obj', () => {
+    expect(array[5]).toMatchObject({
+        img: '../../../../../images/Lincoln_Lawyer.jpg',
+        age: 2011,
+        title: 'Lincoln Lawyer',
+        name: 'Lincoln Lawyer',
+        ganre: 'Thriller/Crime',
+        id: 6
+    })
+})

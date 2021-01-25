@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './MovieList.css'
 import MovieItem from './MovieItem'
-import TestList from './MovieList.test'
+
 
 const array = [
     {

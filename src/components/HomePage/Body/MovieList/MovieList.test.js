@@ -1,3 +1,8 @@
+import React from 'react';
+import MovieList from "./MovieList.js"
+import renderer from 'react-test-renderer'
+import HomePage from '../../HomePage.js';
+import DescriptionPage from '../../../DescriptionPage/DescriptionPage.js';
 
 const array = [
     {
@@ -51,9 +56,8 @@ const array = [
 
 ]
 
-const obj = array[0]
 
-test('the array have obj', () => {
+test('the page have obj Lincoln Lawyer', () => {
     expect(array[5]).toMatchObject({
         img: '../../../../../images/Lincoln_Lawyer.jpg',
         age: 2011,
@@ -63,3 +67,26 @@ test('the array have obj', () => {
         id: 6
     })
 })
+
+test('first element page - Top Gun', () => {
+    expect(array[0]).toMatchObject({
+        img: '../../../../../images/topgun.jpg',
+        age: 1994,
+        title: 'Top Gun',
+        name: 'Top Gun',
+        ganre: 'Action',
+        id: 1
+    })
+})
+
+//jest --updateSnapshot
+
+it("render correctly MovieList component", () => {
+    const MovieListComponent = renderer.create(<MovieList/>).toJSON()
+    expect(MovieListComponent).toMatchSnapshot()
+});
+
+it("render correctly HomePage component", () => {
+    const MovieListComponent = renderer.create(<HomePage/>).toJSON()
+    expect(MovieListComponent).toMatchSnapshot()
+});

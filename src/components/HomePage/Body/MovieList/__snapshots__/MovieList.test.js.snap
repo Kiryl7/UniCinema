@@ -145,10 +145,10 @@ exports[`render correctly HomePage component 1`] = `
       >
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/topgun.jpg"
           />
           <div
@@ -169,10 +169,10 @@ exports[`render correctly HomePage component 1`] = `
         </li>
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/terminator.jpg"
           />
           <div
@@ -193,10 +193,10 @@ exports[`render correctly HomePage component 1`] = `
         </li>
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/Blue_Velvet.jpg"
           />
           <div
@@ -217,10 +217,10 @@ exports[`render correctly HomePage component 1`] = `
         </li>
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/Vanishing_Point.jfif"
           />
           <div
@@ -241,10 +241,10 @@ exports[`render correctly HomePage component 1`] = `
         </li>
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/Death_Proof.jpg"
           />
           <div
@@ -265,10 +265,10 @@ exports[`render correctly HomePage component 1`] = `
         </li>
         <li
           className="indent"
+          onClick={[Function]}
         >
           <img
             className="imgStyle"
-            onClick={[Function]}
             src="../../../../../images/Lincoln_Lawyer.jpg"
           />
           <div
@@ -302,10 +302,10 @@ exports[`render correctly MovieList component 1`] = `
   >
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/topgun.jpg"
       />
       <div
@@ -326,10 +326,10 @@ exports[`render correctly MovieList component 1`] = `
     </li>
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/terminator.jpg"
       />
       <div
@@ -350,10 +350,10 @@ exports[`render correctly MovieList component 1`] = `
     </li>
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/Blue_Velvet.jpg"
       />
       <div
@@ -374,10 +374,10 @@ exports[`render correctly MovieList component 1`] = `
     </li>
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/Vanishing_Point.jfif"
       />
       <div
@@ -398,10 +398,10 @@ exports[`render correctly MovieList component 1`] = `
     </li>
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/Death_Proof.jpg"
       />
       <div
@@ -422,10 +422,10 @@ exports[`render correctly MovieList component 1`] = `
     </li>
     <li
       className="indent"
+      onClick={[Function]}
     >
       <img
         className="imgStyle"
-        onClick={[Function]}
         src="../../../../../images/Lincoln_Lawyer.jpg"
       />
       <div

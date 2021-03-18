@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './MovieList.css'
 import MovieItem from './MovieItem'
 
+
 const array = [
     {
         img: '../../../../../images/topgun.jpg',
@@ -61,7 +62,7 @@ function MovieList(props) {
         const findObj = array.find(obj => {
             return obj.id === id
         })
-    
+
         props.onClick(findObj)
     }
 
@@ -71,7 +72,7 @@ function MovieList(props) {
                 {
                     array.map((obj) => {
                         return (
-                            <MovieItem key={obj.id} onClick={props.onClick} data={obj} onOpen={openFilm}/>
+                            <MovieItem key={obj.id} onClick={props.onClick} data={obj} onOpen={openFilm} />
                         )
                     })
                 }
